@@ -1,0 +1,23 @@
+version: '3.7'
+services:
+
+  lottery:
+    build: .
+    volumes:
+      - .:/workspace
+    command:
+      - /opt/bb/bin/python3.11
+      - run-lottery.py
+      - --help
+
+  test:
+    build: .
+    volumes:
+      - .:/workspace
+    command:
+      - /opt/bb/bin/python3.11
+      - -m
+      - pytest
+      - tests
+    depends_on:
+      - lottery

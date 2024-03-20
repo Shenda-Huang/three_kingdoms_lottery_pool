@@ -1,0 +1,34 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Unit test / coverage reports
+.tox/
+.coverage
+coverage.xml
+tests.xml
+unit-test.xml
+integration-test.xml
+system-test.xml
+
+# Task logs
+*.log*
+
+# build artifacts
+build_output/
+refroot/
+
+# virtualenv
+.venv/
+
+# mkdocs documentation
+site/
+
+# mypy
+.mypy_cache/
+
+# Visual Studio Code
+*.vscode/
+.devcontainer/
+*.code-workspace

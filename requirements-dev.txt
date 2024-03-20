@@ -1,0 +1,7 @@
+-r requirements.txt
+black
+mypy
+pandas-stubs
+pylint
+pytest >= 4.1.1
+pytest-cov >= 2.6.1
